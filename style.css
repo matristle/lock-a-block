@@ -1,0 +1,173 @@
+
+/* * {
+    border: 4px solid red;
+} */
+
+@font-face {
+    font-family: Minecraft;
+    src: url(Assets/Fonts/Minecraftchmc-dBlX.ttf);
+}
+
+body {
+   overflow: hidden;
+   background-color: rgb(21, 23, 24);
+}
+
+header {
+    font-family: Minecraft, Roboto, sans-serif;
+    font-size: 100px;
+    display: flex;
+    margin: 20px 40px;
+    color: aliceblue;
+    text-shadow: 6px 6px 8px #9FFFF5;
+}
+
+#table-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+
+
+#grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 800px;
+    height: 800px;
+    flex-shrink: 0;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 50px;
+    border-radius: 30px;
+    /* background-color: green; */
+}
+
+button {
+    width: 150px;
+    height: 75px;
+    border: 0;
+    border-radius: 30px;
+
+}
+
+#grid-button-div {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    flex: 0 0 auto;
+    order: -1;
+    background-color: black;
+}
+
+
+#rainbow-button:hover,
+#blackening-button:hover{
+    filter: drop-shadow(15px 15px 15px rgb(114, 159, 207));
+    
+}
+
+#grid-button-div:hover {
+    box-shadow: 3px 3px 1px snow;
+}
+
+.button-row {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    
+}
+
+.button-square {
+   flex: 1;
+   width: 100%;
+   margin: 2px;
+}
+
+.button-square:hover {
+    box-shadow: 3px 3px 1px snow;
+}
+
+.button-square:active {
+    transform: scale(10);
+}
+
+#canvas-color-picker {
+    width: 200px;
+    height: 200px;
+    /* border: 30px solid #2B2D42; */
+}
+
+#button-plus-picker-container {
+    padding: 50px 20px;
+    border-left: 15px solid snow; 
+    border-right: 15px solid snow; 
+    border-radius: 40px;
+    display: flex;
+    gap: 20px;
+    order: 3;
+    background-color: black;
+}
+
+#blackening-button {
+    width: 200px;
+    height: 50px;
+}
+#rainbow-button {
+    width: 250px;
+    height: 250px;
+    order: 3;
+}
+
+#drawing-color-picker {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #EA7AF4;
+    border-radius: 5px;
+}
+
+
+#blackening-button:active {
+    transform: scale(2.00) rotate(90deg);
+   
+}
+
+#rainbow-button:active {
+    transform: scale(2.00) rotate(120deg);
+   
+}
+
+
+#drawing-color-picker:active {
+    transform: scale(3.00); 
+}
+
+#canvas-color-picker:active {
+    transform: scale(1.50);
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    border: 0;
+}
+
+.square {
+   flex: 1;
+   width: 100%;
+    border: 0;
+    border-radius: 2px;
+}
+
+
+
